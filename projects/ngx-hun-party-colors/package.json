@@ -1,0 +1,14 @@
+{
+  "name": "ngx-hun-party-colors",
+  "version": "0.0.1",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": ">=10.0.0",
+    "@angular/core": ">=10.0.0",
+    "@angular/cdk": ">=10.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "d3-color": "^2.0.0"
+  }
+}

@@ -1,0 +1,1 @@
+# ngx-hun-party-colors
