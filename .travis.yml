@@ -26,9 +26,9 @@ jobs:
       if: branch = main AND type = push AND fork = false
       before_deploy:
         - npm run publish:lib
-        deploy:
-          edge: true
-          provider: npm
-          email: "$NPM_EMAIL"
-          api_key: "NPM_API_TOKEN"
-          cleanup: true
+      deploy:
+        edge: true
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "NPM_API_TOKEN"
+        cleanup: true
