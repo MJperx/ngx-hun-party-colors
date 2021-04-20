@@ -9,13 +9,6 @@ branches:
   only:
     - main
 
-addons:
-# apt:
-#   sources:
-#     - google-chrome
-#   packages:
-#     - google-chrome-stable
-
 cache:
   directories:
     - ./node_modules
@@ -23,7 +16,12 @@ cache:
 install:
   - npm install
 
-script:
-  # Use Chromium instead of Chrome.
-  # - export CHROME_BIN=chromium-browser
-  - npm run lint
+jobs:
+  include:
+    - stage: build
+      script: npm run build:lib
+    - stage: test
+      script: npm run lint
+    - stage: publish
+      if: branch = main AND type = push AND fork = false
+      script: npm run publish:lib

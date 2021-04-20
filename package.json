@@ -1,6 +1,6 @@
 {
   "name": "angular-ngx-hun-party-colors",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,8 +8,8 @@
     "build:demo": "ng build --prod",
     "build:lib": "ng build --prod ngx-hun-party-colors",
     "copy-files": "cp README.md dist/ngx-hun-party-colors/README.md && cp LICENSE dist/ngx-hun-party-colors/LICENSE",
-    "bump-version": "npm version patch --force",
-    "package": "run-s build:lib copy-files bump-version",
+    "bump-version": "cd projects/ngx-hun-party-colors && npm version patch --force",
+    "package": "run-s bump-version build:lib copy-files",
     "prepublish:lib": "npm run package",
     "publish:lib": "npm publish ./dist/ngx-hun-party-colors",
     "test": "ng test",
