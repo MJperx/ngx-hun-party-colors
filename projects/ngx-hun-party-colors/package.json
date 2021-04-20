@@ -2,13 +2,31 @@
   "name": "ngx-hun-party-colors",
   "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madar94/ngx-hun-party-colors.git"
+  },
+  "keywords": [
+    "párt",
+    "pártok",
+    "szín",
+    "magyar",
+    "magyarország",
+    "angular"
+  ],
+  "author": "Jozsef Madar <madar94@gmail.com>",
+  "maintainers": [
+    "Jozsef Madar"
+  ],
+  "bugs": {
+    "url": "https://github.com/madar94/ngx-hun-party-colors/issues"
+  },
   "peerDependencies": {
     "@angular/common": ">=10.0.0",
     "@angular/core": ">=10.0.0",
     "@angular/cdk": ">=10.0.0"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
-    "d3-color": "^2.0.0"
+    "tslib": "^2.0.0"
   }
 }

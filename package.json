@@ -1,11 +1,11 @@
 {
-  "name": "ngx-hun-party-colors",
+  "name": "angular-ngx-hun-party-colors",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:demo": "ng build --prod",
     "build:lib": "ng build --prod ngx-hun-party-colors",
     "test": "ng test",
     "lint": "ng lint",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.7",
+    "@angular-devkit/build-ng-packagr": "^0.1002.0",
     "@angular/cli": "~10.0.7",
     "@angular/compiler-cli": "~10.0.11",
     "@types/node": "^12.11.1",
@@ -45,5 +46,28 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madar94/ngx-hun-party-colors.git"
+  },
+  "keywords": [
+    "párt",
+    "pártok",
+    "szín",
+    "magyar",
+    "magyarország",
+    "angular",
+    "d3",
+    "d3.js",
+    "d3js"
+  ],
+  "author": "Jozsef Madar <madar94@gmail.com>",
+  "maintainers": [
+    "Jozsef Madar"
+  ],
+  "bugs": {
+    "url": "https://github.com/madar94/ngx-hun-party-colors/issues"
   }
 }

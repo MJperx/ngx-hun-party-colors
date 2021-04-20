@@ -7,7 +7,6 @@ import { HUNPartyColorsService } from '../../projects/ngx-hun-party-colors/src/l
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'ngx-hun-party-colors';
 
   constructor(private readonly hunPartyColorsService: HUNPartyColorsService) { }
 
