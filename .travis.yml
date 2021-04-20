@@ -32,3 +32,5 @@ jobs:
         email: "$NPM_EMAIL"
         api_token: "$NPM_API_TOKEN"
         cleanup: true
+        tags: true
+        branch: main
