@@ -1,33 +1,17 @@
-dist: trusty
-os: linux
+os:
+  - linux
 language: node_js
-
 node_js:
-  - "12"
-
-cache:
-  directories:
-    - ./node_modules
-
-install:
-  - npm install
-
-jobs:
-  include:
-    - stage: build
-      script: npm run build:lib
-    - stage: test
-      script: npm run lint
-    - stage: publish
-      if: branch = main AND type = push AND fork = false
-      before_deploy:
-        - npm run publish:lib
-      deploy:
-        on:
-          tags: true
-          all_branches: true
-        edge: true
-        provider: npm
-        email: "$NPM_EMAIL"
-        api_token: "$NPM_API_TOKEN"
-        skip_cleanup: true
+  - 8
+  - 10
+  - 12
+script:
+  - npm run release
+deploy:
+  - provider: npm
+    edge: true
+    email: $NPM_EMAIL
+    api_token: $NPM_API_TOKEN
+    on:
+      tags: true
+      node_js: 12
