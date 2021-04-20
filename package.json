@@ -1,6 +1,6 @@
 {
   "name": "angular-ngx-hun-party-colors",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,12 +8,14 @@
     "build:demo": "ng build --prod",
     "build:lib": "ng build --prod ngx-hun-party-colors",
     "copy-files": "cp README.md dist/ngx-hun-party-colors/README.md && cp LICENSE dist/ngx-hun-party-colors/LICENSE",
-    "package": "run-s build:lib copy-files",
+    "bump-version": "npm version patch --force",
+    "package": "run-s build:lib copy-files bump-version",
     "prepublish:lib": "npm run package",
     "publish:lib": "npm publish ./dist/ngx-hun-party-colors",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ngcc"
   },
   "dependencies": {
     "@angular/animations": "~10.0.11",
