@@ -12,7 +12,6 @@
     "package": "run-s bump-version build:lib copy-files",
     "prepublish:lib": "npm run package",
     "publish:lib": "npm publish ./dist/ngx-hun-party-colors",
-    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "ngcc"
