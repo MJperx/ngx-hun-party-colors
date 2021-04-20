@@ -14,6 +14,6 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     console.log(this.hunPartyColorsService.getPartyColorHex('fIdEsZ'));
     console.log(this.hunPartyColorsService.getPartyColorRgb('fIdEsZ'));
-    console.log(this.hunPartyColorsService.getPartyColorHsl('fIdEsZ'));
+    console.log(this.hunPartyColorsService.getPartyColorHsl('DK'));
   }
 }

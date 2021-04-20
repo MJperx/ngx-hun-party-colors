@@ -21,6 +21,23 @@ export class AppModule {
 }
 ```
 
+## Usage
+
+```typescript
+import { HUNPartyColorsService } from 'ngx-hun-party-colors';
+
+@Component({...})
+export class YourComponent {
+  constructor(private colorService: HUNPartyColorsService) {}
+
+  getColors() {
+    this.colorService.getPartyColorHex('fidesz'); // Returns: #fd8100
+    this.colorService.getPartyColorRgb('Fidesz – Magyar Polgári Szövetség'); // Returns: rgb(253, 129, 0)
+    this.colorService.getPartyColorHsl('DK'); // Returns: hsl(210.11764705882354, 1, 0.5)
+  }
+}
+```
+
 ## Contributing
 
 If you found a bug or want to propose a feature, feel free to visit [the issues page](https://github.com/madar94/ngx-hun-party-colors/issues).
