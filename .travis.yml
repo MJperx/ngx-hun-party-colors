@@ -5,6 +5,11 @@ language: node_js
 node_js:
   - "12"
 
+branches:
+  only:
+    - master
+    - travis-ci
+
 addons:
 # apt:
 #   sources:
