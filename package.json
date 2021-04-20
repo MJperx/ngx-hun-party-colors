@@ -10,7 +10,7 @@
     "copy-files": "cp README.md dist/ngx-hun-party-colors/README.md && cp LICENSE dist/ngx-hun-party-colors/LICENSE",
     "bump-version": "cd projects/ngx-hun-party-colors && npm version patch --force",
     "package": "run-s bump-version build:lib copy-files",
-    "prepublish:lib": "npm run package",
+    "prerelease": "npm run package",
     "release": "npm publish ./dist/ngx-hun-party-colors",
     "lint": "ng lint",
     "e2e": "ng e2e",
