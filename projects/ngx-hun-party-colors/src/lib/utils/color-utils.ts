@@ -33,7 +33,9 @@ export function hexToHsl(value: string): any {
     const cmax = Math.max(r, g, b);
     const delta = cmax - cmin;
 
-    let h, s, l: number;
+    let h = 0;
+    let s = 0;
+    let l = 0;
 
     if (delta === 0) {
         h = 0;
@@ -48,7 +50,7 @@ export function hexToHsl(value: string): any {
     h = Math.round(h * 60);
 
     if (h < 0) {
-        h +=360;
+        h += 360;
     }
 
     l = (cmax + cmin) / 2;

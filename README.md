@@ -1,4 +1,5 @@
 # ngx-hun-party-colors
+[![npm version](https://badge.fury.io/js/ngx-hun-party-colors.svg)](https://badge.fury.io/js/ngx-hun-party-colors)
 
 
 ## Installation
