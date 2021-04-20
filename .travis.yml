@@ -24,4 +24,11 @@ jobs:
       script: npm run lint
     - stage: publish
       if: branch = main AND type = push AND fork = false
-      script: npm run publish:lib
+      before_deploy:
+        - npm run publish:lib
+        deploy:
+          edge: true
+          provider: npm
+          email: "$NPM_EMAIL"
+          api_key: "NPM_API_TOKEN"
+          cleanup: true
