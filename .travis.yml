@@ -27,10 +27,11 @@ jobs:
       before_deploy:
         - npm run publish:lib
       deploy:
+        on:
+          tags: true
+          branch: main
         edge: true
         provider: npm
         email: "$NPM_EMAIL"
         api_token: "$NPM_API_TOKEN"
         cleanup: true
-        tags: true
-        branch: main
